@@ -13,14 +13,20 @@
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body class="bg-light">
+<body>
     <div class="wrapper">
-        <nav class="navbar navbar-light bg-light navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">FIFA Champions</a>
-        </nav>
 
+        <nav class="navbar navbar-light navbar-expand-lg">
+          
+          <a class="navbar-brand" href="index.html">Champions</a>
+          <a class="navbar-brand" href="visualizations.html">Visualizations</a>
+
+        </nav>
+        
         <div class="jumbotron">
-            <h1 class="display-4 text-white">FIFA WORLD CUP</h1>
+            <h1 class="display-4 text-white">FIFA WORLD CUP <br>
+              <small>1930 - 2018</small>
+            </h1>
         </div>
 
         <div class="container-fluid">
@@ -40,13 +46,10 @@
 
           <div class="container-fluid">
             <div class="row">
-
               <div class="col-md-3">
-
+                <!--Creating a form to select year-->
                 <form class="bg-danger">
-
                   <p>Select Year</p>
-
                   <div class="form-group">
                     <select class="form-control" id="Year" name="Year" onchange="EnterYear(this)">
                         <option value="1930">1930</option>
@@ -75,9 +78,9 @@
                 </form>
                 
               </div>
-              
+              <!-- Building a Table -->
               <div class="col-md-9">
-                <table class="table table-striped">
+                <table class="table table-bordered">
                   <thead>
                     <tr>
                       <th>Year</th>
@@ -93,10 +96,13 @@
                   <tbody></tbody>
                 </table>
               </div>
-              </div>
+              
             </div>
           </div>   
     </div>
+    <br><br>
+    
+    <!-- JavaScript Files-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="static/js/fifa.js"></script>
     <script src="static/js/app.js"></script>  
