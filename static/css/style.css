@@ -1,0 +1,12 @@
+body {
+
+    color: black;
+  }
+
+.jumbotron {
+    background-image: url("../images/fifa.jpg");
+    background-size: 900 450;
+    text-align: center;
+  }
+
+  .form{style="font-family: inherit; font-size: 1rem;"}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Champions</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-light">
+    <div class="wrapper">
+        <nav class="navbar navbar-light bg-light navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">FIFA Champions</a>
+        </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-4 text-white">FIFA WORLD CUP</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>FIFA World Cup History </h3>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  The FIFA World Cup is the most prestigious soccer competition in the world. Played every four years, 
+                  the World Cup hosts the top 32 national teams in a monthlong tournament. The host country is selected by FIFA’s Council.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-3">
+
+                <form class="bg-danger">
+
+                  <p>Select Year</p>
+
+                  <div class="form-group">
+                    <select class="form-control" id="Year" name="Year" onchange="EnterYear(this)">
+                        <option value="1930">1930</option>
+                        <option value="1934">1934</option>
+                        <option value="1938">1938</option>
+                        <option value="1950">1950</option>
+                        <option value="1954">1954</option>
+                        <option value="1958">1958</option>
+                        <option value="1962">1962</option>
+                        <option value="1966">1966</option>
+                        <option value="1970">1970</option>
+                        <option value="1974">1974</option>
+                        <option value="1978">1978</option>
+                        <option value="1982">1982</option>
+                        <option value="1986">1986</option>
+                        <option value="1990">1990</option>
+                        <option value="1994">1994</option>
+                        <option value="1998">1998</option>
+                        <option value="2002">2002</option>
+                        <option value="2006">2006</option>
+                        <option value="2010">2010</option>
+                        <option value="2014">2014</option>
+                        <option value="2018">2018</option>
+                      </select>
+                  </div>
+                </form>
+                
+              </div>
+              
+              <div class="col-md-9">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Year</th>
+                      <th>Champion</th>
+                      <th>Runner Up</th>
+                      <th>Third Place </th>
+                      <th>Host</th>
+                      <th>Teams</th>
+                      <th>Matches</th>
+                      <th>Goals</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+          </div>   
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/fifa.js"></script>
+    <script src="static/js/app.js"></script>  
+    
+</body>
+</html>
