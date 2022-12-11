@@ -5,7 +5,9 @@ body {
 
 .jumbotron {
     background-image: url("../images/fifa.jpg");
-    background-size: 900 450;
+    background-size: 900 200;
+    size: 900 200;
+    position:relative; 
     text-align: center;
   }
 
